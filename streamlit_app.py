@@ -75,7 +75,7 @@ def translate(input_sentence):
     return decoded_sentence.replace("[start] ", "").replace(" [end]", "")
 
 # 🔹 Streamlit UI
-st.title("English to Spanish Translator 🌍")
+st.title("English to Spanish Translation")
 st.write("Enter an English sentence below:")
 
 user_input = st.text_input("Your English sentence:")

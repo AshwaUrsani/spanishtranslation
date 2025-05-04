@@ -1,6 +1,6 @@
 # pip install streamlit gdown
 import os
-# import gdown
+import gdown
 
 import numpy as np
 import tensorflow as tf
@@ -14,15 +14,15 @@ import re
 import streamlit as st
 
 # # 🔹 Replace these with your actual Google Drive file IDs
-# WEIGHTS_FILE_ID = "1ro0_qn_UKpZIPszln_CQ6PFHjkqLdwNw"
-# SOURCE_VEC_ID   = "1pLVLE46Tle94LuA7wGEjctEA1FIu41rO"
-# TARGET_VEC_ID   = "1A14nuEK3KDuJ6bGC137nKVox0HZSCJHe"
+WEIGHTS_FILE_ID = "1ro0_qn_UKpZIPszln_CQ6PFHjkqLdwNw"
+SOURCE_VEC_ID   = "1pLVLE46Tle94LuA7wGEjctEA1FIu41rO"
+TARGET_VEC_ID   = "1A14nuEK3KDuJ6bGC137nKVox0HZSCJHe"
 
 # # 🔻 Function to download from Google Drive
-# def download_file_from_drive(file_id, output):
-#     if not os.path.exists(output):
-#         url = f"https://drive.google.com/uc?id={file_id}"
-#         gdown.download(url, output, quiet=False)
+def download_file_from_drive(file_id, output):
+    if not os.path.exists(output):
+        url = f"https://drive.google.com/uc?id={file_id}"
+        gdown.download(url, output, quiet=False)
 
 # # 🔹 Download model and vectorizers if not already present
 # download_file_from_drive(WEIGHTS_FILE_ID, "translation_transformer.weights.h5")

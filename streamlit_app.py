@@ -25,9 +25,9 @@ def download_file_from_drive(file_id, output):
         gdown.download(url, output, quiet=False)
 
 # # 🔹 Download model and vectorizers if not already present
-# download_file_from_drive(WEIGHTS_FILE_ID, "translation_transformer.weights.h5")
-# download_file_from_drive(SOURCE_VEC_ID, "source_vectorizer.keras")
-# download_file_from_drive(TARGET_VEC_ID, "target_vectorizer.keras")
+download_file_from_drive(WEIGHTS_FILE_ID, "spa_translation_transformer.weights.h5")
+download_file_from_drive(SOURCE_VEC_ID, "source_vectorization.keras")
+download_file_from_drive(TARGET_VEC_ID, "target_vectorization.keras")
 
 # 🔹 Register custom standardization
 @register_keras_serializable()

@@ -7,7 +7,6 @@
 
 > Built and deployed a real-time language translation system using a Transformer model trained from scratch — accessible to anyone via a live web app.
 
-🔗 **[Try the Live App →](https://spanishtranslation.streamlit.app)**
 
 ---
 

@@ -1,4 +1,6 @@
-# 🌐 English to Spanish Neural Machine Translator
+![Deep Learning & NLP](https://img.shields.io/badge/Deep%20Learning%20&%20NLP%207C%20NLP-6A0DAD?style=flat)
+# 🌐 English to Spanish Neural Machine Translator | AI & Technology
+
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)

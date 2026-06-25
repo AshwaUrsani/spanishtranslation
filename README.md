@@ -58,36 +58,13 @@ A common production pitfall: vocabularies that change between training and infer
 
 ---
 
-## 🚀 Try It Yourself
+## 🚀 Streamlit Application
 
 **Live app:** [https://spanishtranslation.streamlit.app](https://spanishtranslation.streamlit.app)
 
-Or run locally:
-
-```bash
-git clone https://github.com/yourusername/english-spanish-translator
-cd english-spanish-translator
-pip install -r requirements.txt
-streamlit run app.py
-```
 
 ---
 
-## 📁 Project Structure
-
-```
-├── app.py                  # Streamlit web app
-├── transformer_model.py    # Model architecture
-├── train.py                # Training script
-├── vectorizers/
-│   ├── eng_vectorizer.keras
-│   └── spa_vectorizer.keras
-├── weights/
-│   └── translator.h5
-└── notebook.ipynb          # Full walkthrough
-```
-
----
 
 ## 💼 Skills Demonstrated
 

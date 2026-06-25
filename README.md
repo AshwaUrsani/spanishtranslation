@@ -4,75 +4,51 @@
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-![Status](https://img.shields.io/badge/Live%20Demo-Available-brightgreen)
 
-> A fully deployable English-to-Spanish translation system built from scratch using a custom Transformer architecture — trained, saved, and served via a live web app.
+> Built and deployed a real-time language translation system using a Transformer model trained from scratch — accessible to anyone via a live web app.
 
 🔗 **[Try the Live App →](https://spanishtranslation.streamlit.app)**
 
 ---
 
-## 🧠 What Makes This Project Stand Out
+## 🎯 Project Overview
 
-Most NLP tutorials stop at training. This project goes further:
+This project goes beyond training a model — it delivers a **fully working translation product**. A user types any English sentence into the web app and receives an instant Spanish translation, powered by a deep learning model I designed, trained, and deployed end-to-end.
 
-- ✅ Custom Transformer built and trained from scratch (no pre-trained models)
-- ✅ Solved real serialization challenges to make the model **reloadable and reusable**
-- ✅ Deployed as a **production-ready web app** on Streamlit Cloud
-- ✅ End-to-end pipeline: raw text → preprocessing → inference → output
+The goal was to understand how large language models like Google Translate work under the hood, and then build a scaled-down version from scratch.
 
 ---
 
-## 🏗️ Model Architecture
+## 📈 Results
 
-Built with **TensorFlow / Keras** using a sequence-to-sequence Transformer:
-
-| Component | Configuration |
+| | |
 |---|---|
-| Transformer Layers | 4 |
-| Embedding Dimensions | 128 |
-| Attention Heads | 8 |
-| Feedforward Dimension | 512 |
-| Training Epochs | 10 |
-| Validation Accuracy | ~70% |
-
-**Key architectural choices:**
-- **Positional Encoding** — injects token order into attention-based layers
-- **Multi-Head Self-Attention** — captures cross-lingual semantic relationships
-- **Greedy Decoding** — generates the most probable Spanish token at each step
+| Validation Accuracy | **~70%** over 10 training epochs |
+| Deployment | **Live on Streamlit Cloud** |
+| Interaction | Real-time, browser-based translation |
 
 ---
 
-## 🔧 Engineering Highlights
+## 💡 What I Did
 
-### Vectorization Preservation
-A common production pitfall: vocabularies that change between training and inference, causing silent errors. This was solved by:
-- Using a custom `TextVectorization` layer with `@register_keras_serializable()`
-- Saving both source (English) and target (Spanish) vectorizers as `.keras` files
-- Ensuring token-index mappings remain **identical** across training and deployment
-
-### Modular Inference Pipeline
-- Model weights saved in `.h5` format
-- Reconstructed at inference time with a dummy batch pass to rebuild layer shapes
-- Enables **repeated use without retraining** — true production behaviour
+- **Designed the model architecture** — built a Transformer network from scratch using TensorFlow, the same foundational architecture behind modern AI translation tools
+- **Trained on bilingual data** — fed the model thousands of English-Spanish sentence pairs to learn cross-language patterns
+- **Solved a real deployment problem** — ensured the model's vocabulary is saved and reloaded correctly, so it behaves identically in production as it did in training
+- **Shipped a live product** — deployed the model as an interactive web app on Streamlit Cloud, linked to GitHub for continuous access
 
 ---
 
-## 🚀 Streamlit Application
+## 🚀 Try It Yourself
 
-**Live app:** [https://spanishtranslation.streamlit.app](https://spanishtranslation.streamlit.app)
+**[https://spanishtranslation.streamlit.app](https://spanishtranslation.streamlit.app)**
 
+Type any English sentence — get Spanish back instantly.
 
 ---
-
 
 ## 💼 Skills Demonstrated
-
-- Deep Learning & NLP (Transformer architecture from scratch)
-- Model serialization and production-safe inference pipelines
-- Full-stack ML deployment (Streamlit Cloud + GitHub)
-- Software engineering best practices in ML (modularity, reproducibility)
+`Deep Learning` `NLP` `TensorFlow` `Model Deployment` `Streamlit` `Python` `End-to-End ML`
 
 ---
 
-*Built as part of CIS433 — AI and Deep Learning | Simon Business School, University of Rochester*
+*CIS433 — AI and Deep Learning | Simon Business School, University of Rochester*
